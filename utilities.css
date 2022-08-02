@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --var-main-bg: hsl(233, 47%, 7%);
+    --var-card-bg: hsl(244, 38%, 16%);
+    --var-card-cover: hsl(277, 64%, 61%);
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.font-thin{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(148, 137, 163);
+}
+
+.active{
+    animation: move 4s linear infinite;
+    background-image: linear-gradient(to right, #77f, #2662e6, #cc25ff, #c025b3, #77f);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes move { 
+    to { 
+        background-position: 200% center; 
+    } 
+}
